@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Logout extends Component {
+class Signup extends Component {
   state = {
     email: '',
     password: '',
@@ -23,7 +23,7 @@ class Logout extends Component {
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
-          <h5 className="blue-text text-darken-3">Log In</h5>
+          <h5 className="blue-text text-darken-3">Sign Up</h5>
           <div className="input-field">
             <label htmlFor="email">Email</label>
             <input type="email" id="email" onChange={this.handleChange} />
@@ -41,7 +41,7 @@ class Logout extends Component {
             <input type="text" id="lastName" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <button className="btn blue lighten-1 z-z-depth-0">Login</button>
+            <button className="btn blue lighten-1 z-z-depth-0">Sign Up</button>
           </div>
         </form>
       </div>
@@ -49,4 +49,4 @@ class Logout extends Component {
   }
 }
 
-export default Logout;
+export default Signup;
